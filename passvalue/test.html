@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page A</title>
+</head>
+<body>
+  <h1>A Page</h1>
+  <p>Intro: Pass data to page b.</p>
+  <button id="aconn">跳转AConn</button>
+
+  <script>
+    window.onload = function() {
+      var btn = document.getElementById('aconn');
+      btn.onclick = function() {
+        var level = '2';
+        var tenantId = 'HZ_Unicom_Demo';
+        var token = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmYXJtQGVtcXR0LmlvIiwiY3JlYXRlZCI6MTUyNzU4NDgyNDc5MiwiZXhwIjoxNTI4MTg5NjI0LCJtZDUiOiIyZTg1ZmUxYWIzNmMyZmI0NjVjNmZlZmQ0OTQ0MjEwZiJ9.QYlDncsLZ1sq5GQHI3pdickbXVS0xAPu2JkZoMvxdto';
+        var queryString = "?level=" + level + "&token=" + token + "&tenantId=" + tenantId;
+        //window.location.href="http://trial.aconn.acloudglobal.com/app/welcome" + queryString;
+        //window.location.href="http://172.16.1.4:8093/app/welcome" + queryString;
+        window.location.href="http://trial.aconn.acloudglobal.com/app/welcome" + queryString;
+      }
+    }
+  </script>
+</body>
+</html>
