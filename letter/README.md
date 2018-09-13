@@ -1,3 +1,5 @@
+Assessment from MDN [Marking up a letter](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Marking_up_a_letter)
+
 ## Objective:
 
 To test basic and advanced HTML text formatting and hyperlink skills, and knowledge of what goes in the HTML `<head>`.
